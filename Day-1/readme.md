@@ -1,6 +1,6 @@
 ### Day 1 - Simple Harmonic Motion
 
-Inspiration: [Pendulum Music](https://en.wikipedia.org/wiki/Pendulum_Music) by Steve Reich (1968)
+Inspiration: [stc](https://github.com/stc/HackPact/tree/master/Day-1) and 🍺
 
 ### Install
 `npm install --save`
