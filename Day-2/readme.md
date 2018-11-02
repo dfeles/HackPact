@@ -1,4 +1,4 @@
-### Day 2 - Simple Harmonic Motion
+### Day 2 - Moiret
 
 Inspiration: [Moiret](https://hu.wikipedia.org/wiki/Moiret_%C3%96d%C3%B6n)
 

@@ -43,7 +43,7 @@ const sketch = (p5) => {
 				if (dist < 300) {
 					dist /= 300
 					dist *= dist
-					p5.curveVertex(Math.cos(lastY*dist/(Math.abs(Math.sin(p5.frameCount/300)*50)+10) + p5.frameCount*0.05) * (1-dist)*20,lastY+height)
+					p5.curveVertex(Math.cos(lastY*dist/(Math.sin(p5.frameCount/300)*50) + p5.frameCount*0.05) * (1-dist)*20,lastY+height)
 				} else {
 					p5.curveVertex(0,lastY+height)
 				}
