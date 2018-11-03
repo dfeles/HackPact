@@ -61,44 +61,34 @@ const sketch = (p5) => {
 	}
 
 	let formula = (i,n, rnd, lastY, height) => {
+		let x = 0
+		let y = 0
 		switch (formulaSeed) {
 			case 1:
-				p5.rotate(rnd/100)
-				let x = 0+rnd + Math.cos(i/10+p5.frameCount/10)*Math.tan(n/200+p5.frameCount/10)*Math.cos(n/10+p5.frameCount/10)*30 
-				let y = lastY+Math.sin(n/100+p5.frameCount/10)*Math.cos(i/100+p5.frameCount/10)*30+rnd+height
-				p5.fill(i*100,n*100,255)
-				p5.rect(x,y, .1, .1)
+				x = 0+rnd + Math.cos(i/10+p5.frameCount/10)*Math.tan(n/200+p5.frameCount/10)*Math.cos(n/10+p5.frameCount/10)*30 
+				y = lastY+Math.sin(n/100+p5.frameCount/10)*Math.cos(i/100+p5.frameCount/10)*30+rnd+height
 				break
 			case 2:
-				p5.rotate(rnd/100)
-				let x1 = 0+rnd + Math.atan(i/10+p5.frameCount/10)*Math.tan(n/20+p5.frameCount/10)*Math.cos(n/10+p5.frameCount/10)*30
-				let y1 = lastY+Math.atan(n/10+p5.frameCount/10)*Math.cos(i/100+p5.frameCount/10)*30+rnd+height
-				p5.fill(i*100,n*100,255)
-				p5.rect(x1,y1, .1, .1)
+				x = 0+rnd + Math.atan(i/10+p5.frameCount/10)*Math.tan(n/20+p5.frameCount/10)*Math.cos(n/10+p5.frameCount/10)*30
+				y = lastY+Math.atan(n/10+p5.frameCount/10)*Math.cos(i/100+p5.frameCount/10)*30+rnd+height
 				break
 			case 3:
-				p5.rotate(rnd/100)
-				let x2 = 0+rnd + Math.sin(i/10+p5.frameCount/10)*50
-				let y2 = lastY+Math.tan(n/10+p5.frameCount/10)*50+rnd+height
-				p5.fill(i*100,n*100,255)
-				p5.rect(x2,y2, .1, .1)
+				x = 0+rnd + Math.sin(i/10+p5.frameCount/10)*50
+				y = lastY+Math.tan(n/10+p5.frameCount/10)*50+rnd+height
 				break
 			case 4:
-				p5.rotate(rnd/100)
-				let x3 = 0+rnd + Math.tan(i/10+p5.frameCount/10)*Math.sin(n/200+p5.frameCount/10)*50 
-				let y3 = lastY+Math.sin(n/10+p5.frameCount/10)*Math.atan(i/100+p5.frameCount/10)*50+rnd+height
-				p5.fill(i*100,n*100,255)
-				p5.rect(x3,y3, .1, .1)
+				x = 0+rnd + Math.tan(i/10+p5.frameCount/10)*Math.sin(n/200+p5.frameCount/10)*50 
+				y = lastY+Math.sin(n/10+p5.frameCount/10)*Math.atan(i/100+p5.frameCount/10)*50+rnd+height
 				break
 			case 5:
-				p5.rotate(rnd/100)
-				let x4 = 0+rnd + Math.tan(i/10+p5.frameCount/10)*50
-				let y4 = lastY+Math.tan(n/10+p5.frameCount/10)*50+rnd+height
-				p5.fill(i*100,n*100,255)
-				p5.rect(x4,y4, .1, .1)
+				x = 0+rnd + Math.tan(i/10+p5.frameCount/10)*50
+				y = lastY+Math.tan(n/10+p5.frameCount/10)*50+rnd+height
 				break
 		}
 
+		p5.rotate(rnd/100)
+		p5.fill(i*60,n*100,255)
+		p5.rect(x,y, .1, .1)
 	}
 }
 
