@@ -83,6 +83,5 @@ mandelMe = () => {
             pix[p + 3] = 255; // alpha
         }
     }
-    console.log(window.innerWidth - canvas.width)
     context.putImageData(imgd, 0,0);
 }
