@@ -7,7 +7,7 @@ const sketch = (p5) => {
 	let colors = [];
 		
 	p5.setup = () => {
-		let canvas = p5.createCanvas(p5.windowWidth, p5.windowHeight);
+		let canvas = p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.OPENGL);
 	}
 	let mouseX = p5.mouseX
 	let mouseY = p5.mouseY
