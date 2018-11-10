@@ -1,4 +1,4 @@
-### Day 7 - ◉
+### Day 8-9 - Draw
 
 
 ### Install
