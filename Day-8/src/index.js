@@ -121,7 +121,7 @@ const sketch = (p5) => {
 		wdth = 1
 		let offsetX = (p5.windowWidth-img.width*scale)/2
 		let offsetY = (p5.windowHeight-img.height*scale)/2
-		p5.ellipse(this.position.x +offsetX, this.position.y +offsetY, wdth,wdth);
+		p5.rect(this.position.x +offsetX, this.position.y +offsetY, wdth,wdth);
 
 		let dist = p5.dist(
 			this.position.x+offsetX,this.position.y+offsetY,
